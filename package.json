@@ -1,11 +1,25 @@
 {
-  "name": "wireframe-ui-header",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "wireframe-ui-header",
+    "version": "1.0.2",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "browserify": {
+        "transform": [
+            [
+                "riotify",
+                {
+                    "template": "jade"
+                }
+            ]
+        ]
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "riot": "^2.2.4",
+        "riotify": "^0.1.2"
+    }
 }
